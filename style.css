@@ -20,10 +20,11 @@ header h1 {
 .container-controls {
   padding: 20px;
   border-right: 2px solid black;
-}
-
-.control {
-  text-align: right;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .control input {
@@ -36,8 +37,7 @@ header h1 {
   border-bottom: 1px solid black;
 }
 
-.control input:focus,
-textarea:focus {
+.control input:focus {
   outline: 0;
 }
 
@@ -80,6 +80,8 @@ footer {
 .footer-container a {
   margin: 0 5px;
   text-decoration: none;
+  color: black;
+  font-size: 20px;
 }
 
 @media (max-width: 768px) {
@@ -89,5 +91,22 @@ footer {
 
   .container-controls {
     border-right: 0;
+  }
+
+  .box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  footer {
+    position: relative;
+    bottom: auto;
+  }
+}
+
+@media (max-height: 580px) {
+  footer {
+    position: relative;
+    bottom: auto;
   }
 }
